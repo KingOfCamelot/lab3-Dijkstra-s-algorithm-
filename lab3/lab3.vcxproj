@@ -142,11 +142,13 @@
     <ClCompile Include="list_methods.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="red_black_tree_methods.cpp" />
+    <ClCompile Include="string.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra’s_algorithm.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="red_black_tree.h" />
+    <ClInclude Include="string.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
