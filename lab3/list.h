@@ -25,6 +25,7 @@ public:
             LastItem = head;
         }
     }
+    T& operator[](size_t index);
     void push_back(T Num);
     void push_front(T Num);
     void pop_back();
@@ -36,6 +37,8 @@ public:
     int get_size();
     void clear();
     void set(size_t index, T value);
+    void swap();
     bool isEmpty();
+    long index(T& value);
 };
 #endif

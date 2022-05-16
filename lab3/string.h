@@ -20,8 +20,9 @@ public:
     String& operator=(const String&);
     String& operator=(const char*);
     char& operator[](int i);
+    char* get_value();
     const char& operator[](int i) const;
-    static ListOfNum<String> division(const String& origin, char temp);
+    static ListOfNum<String> division(String& origin, char temp);
 
     friend bool operator<(const String& line, const String& line_2);
     friend bool operator>(const String& line_1, const String& line_2);

@@ -39,6 +39,21 @@ void ListOfNum<T>::push_front(T Num)
     }
     size++;
 }
+
+template<typename T>
+void ListOfNum<T>::swap()
+{
+    if (count < 2) return;
+    size_t i = 0;
+    size_t j = count - 1;
+    while (i < j)
+    {
+        Swap(i, j);
+        i++;
+        j--;
+    }
+}
+
 template<typename T>
 void ListOfNum<T>::pop_back()
 {
@@ -143,6 +158,13 @@ void ListOfNum<T>::set(size_t index, T value)
         CurrentItem = CurrentItem->next;
     }
 }
+
+template<typename T>
+T ListOfNum<T>::operator[](size_t index) 
+{ 
+    return at(index); 
+}
+
 template<typename T>
 bool ListOfNum<T>::isEmpty()
 {
@@ -181,4 +203,13 @@ void ListOfNum<T>::insert(T value, size_t index)
         before->next = newel;
     }
     size++;
+}
+template<typename T>
+long ListOfNum<T>::index(T& value)
+{
+    for (size_t i = 0; i < count; i++)
+        if (value == At(i))
+            return i;
+
+    return -1;
 }

@@ -43,6 +43,11 @@ String::~String()
     delete[] line;
 }
 
+char* get_value()
+{
+    return line;
+}
+
 char& String::operator[](int i)
 {
     return line[i];

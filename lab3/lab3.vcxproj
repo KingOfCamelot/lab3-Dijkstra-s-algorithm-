@@ -150,6 +150,9 @@
     <ClInclude Include="red_black_tree.h" />
     <ClInclude Include="string.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\airport.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

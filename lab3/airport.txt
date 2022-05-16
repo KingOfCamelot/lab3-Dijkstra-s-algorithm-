@@ -1,5 +1,0 @@
-Moscow;Kazan;21;14
-Kazan;Ufa;15;N/A
-Ufa;Ijevsk;34;23
-Ijevsk;Spb;12;25
-Spb;Helsinki;15;N/A
