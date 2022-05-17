@@ -1,0 +1,4 @@
+Pekin;Harbin;14;8
+Pekin;Nankin;17;15
+Shanhai;Nankin;25;N/A
+Shanhai;Pekin;31;N/A

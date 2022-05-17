@@ -133,7 +133,7 @@ public:
             sort(left, last);
         }
     }
-    long algorithm(size_t fromIndex, size_t toIndex)
+    int algorithm(size_t fromIndex, size_t toIndex)
     {
         for (size_t i = 0; i < node.get_size(); i++) node[i].length = SIZE_MAX;
         node[fromIndex].length = 0;

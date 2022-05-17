@@ -1,0 +1,3 @@
+Nyc;La;23;54
+La;Denver;15;N/A
+La;Mayaimi;12;31
