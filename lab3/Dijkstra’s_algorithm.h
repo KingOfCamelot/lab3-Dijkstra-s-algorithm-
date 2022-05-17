@@ -73,8 +73,8 @@ public:
             int cost_other_side = check(line[3]);
             nodes root(temp);
             nodes adjacent(temp_2);
-            RegisterNodes(root, adjacent, cost_one_side);
-            RegisterNodes(adjacent, root, cost_other_side);
+            entry_in_graph(root, adjacent, cost_one_side);
+            entry_in_graph(adjacent, root, cost_other_side);
         }
     }
     static long check(String& stringToParse)
@@ -83,7 +83,7 @@ public:
         if (sscanf_s(stringToParse.get_value(), "%i", &result) != 1) return -1;
         if (result < 0) return result;
     }
-    void RegisterNodes(nodes& root, nodes& adjacent, int cost)
+    void entry_in_graph(nodes& root, nodes& adjacent, int cost)
     {
         if (cost < 0) return;
 
